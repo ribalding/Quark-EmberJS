@@ -1,3 +1,8 @@
+body{
+  background-color: #7c858b;
+  color: #eaeaea;
+}
+
 ul{
   list-style: none;
 }
@@ -7,4 +12,10 @@ ul{
   padding: 20px 10px;
   border-radius: 5px;
   color: #1a1a1a;
+  border-bottom: 5px solid darkgrey;
+  border-right: 5px solid darkgrey;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Play', sans-serif;
 }
