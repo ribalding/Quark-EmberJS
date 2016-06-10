@@ -1,0 +1,10 @@
+ul{
+  list-style: none;
+}
+
+.newQuestionBox{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: #1a1a1a;
+}

@@ -1,0 +1,14 @@
+<h1>hai</h1>
+
+<div class="row">
+  <div class="col-sm-8">
+    <ul>
+    {{#each model as |question|}}
+      <li>{{question.question_text}}</li>
+    {{/each}}
+    </ul>
+  </div>
+  <div class="col-sm-4 newQuestionBox">
+    {{new-question saveQuestion="saveQuestion"}}
+  </div>
+</div>

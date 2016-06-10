@@ -4,8 +4,17 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'question-answer',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: {
+      apiKey: "AIzaSyBrIk6otXYmE7ZcCzfXIKw9iYBxx98XAjM",
+      authDomain: "question-answer-90b3d.firebaseapp.com",
+      databaseURL: "https://question-answer-90b3d.firebaseio.com",
+      storageBucket: "question-answer-90b3d.appspot.com"
+    },
+
     baseURL: '/',
     locationType: 'auto',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
