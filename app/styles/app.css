@@ -3,8 +3,21 @@ body{
   color: #eaeaea;
 }
 
-a{
-  color: darkgrey;
+.questionLink{
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin: 25px 0px;
+  border-bottom: 3px solid darkgrey;
+  border-right: 3px solid darkgrey;
+}
+
+.questionLink a{
+  color: #687176;
+}
+
+.notes{
+  font-style: italic;
 }
 
 ul{
@@ -13,14 +26,14 @@ ul{
 
 .newQuestionBox{
   background-color: lightgrey;
-  padding: 20px 10px;
+  padding: 20px 15px;
   border-radius: 5px;
   color: #1a1a1a;
   border-bottom: 5px solid darkgrey;
   border-right: 5px solid darkgrey;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3{
   font-family: 'Josefin Slab', serif;
 }
 
@@ -29,5 +42,5 @@ h1,h2,h3,h4{
 }
 
 .container{
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }

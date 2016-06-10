@@ -1,5 +1,4 @@
-<h3>Add Your Question</h3>
-
+<h2>Edit Question</h2>
 <form>
   <div class="form-group">
     <label for="user_name">User Name</label>
@@ -13,5 +12,5 @@
     <label for="notes">Notes</label>
     {{input value=notes id="notes" class="form-control"}}
   </div>
-  <button class="btn btn-secondary-outline" {{action 'saveQuestion'}}>Submit</button>
+  <button class="btn" {{action 'editQuestion' question}}>Submit</button>
 </form>

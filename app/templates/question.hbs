@@ -1,1 +1,13 @@
-{{model.user_name}}
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-2">
+
+    <h2>{{model.question_text}}</h2>
+
+    <h4>Contributor: {{model.user_name}}</h4>
+
+    <p class="notes">Notes: {{model.notes}}</p>
+  </div>
+  <div class="col-sm-4">
+    {{edit-question question=model editQuestion="editQuestion"}}
+  </div>
+</div>

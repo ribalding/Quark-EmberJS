@@ -3,7 +3,7 @@
     <h1>Newest Questions</h1>
     <ul>
     {{#each model as |question|}}
-      <li><h4>{{#link-to 'question' question.id}}{{question.question_text}}{{/link-to}}</h4></li>
+      <li><h4 class="questionLink">{{#link-to 'question' question.id}}{{question.question_text}}{{/link-to}}</h4></li>
     {{/each}}
     </ul>
   </div>
