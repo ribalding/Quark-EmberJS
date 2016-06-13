@@ -1,53 +1,29 @@
-# Question-answer
+#Quark
+##A practice webpage for Epicodus, 6/11/2016
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+###by Ryan Harvey
 
-## Prerequisites
+##Description
 
-You will need the following things properly installed on your computer.
+This is a web application that functions as a message board allowing users to post questions and then for others to post answers in response.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+##Setup
 
-## Installation
+* Clone This Repository
+* Make sure that you have nodejs, bower and ember installed on your computer.
+* Navigate to the cloned directory in your terminal.
+* Run the following commands  'npm install' , 'bower install' , and "ember serve".
+* In your browser, navigate to localhost:4200
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+##Technologies Used
 
-## Running / Development
+* JavaScript
+* ember
+* nodejs
+* HTML
+* CSS
+* Bower
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+##Legal
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 Ryan Harvey
