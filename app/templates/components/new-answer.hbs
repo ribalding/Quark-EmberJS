@@ -1,0 +1,12 @@
+<h2>Submit Your Answer</h2>
+<form>
+  <div class="form-group">
+    <label for="answer_name">Name</label>
+    {{input value=answer_name id="answer_name" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="answer_text">Your Answer</label>
+    {{textarea value=answer_text id="answer_text" class="form-control"}}
+  </div>
+  <button class='btn btn-primary' {{action 'submitAnswer'}}>Submit</button>
+</form>

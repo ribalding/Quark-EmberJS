@@ -33,12 +33,20 @@ ul{
   border-right: 5px solid darkgrey;
 }
 
-h1,h2,h3{
+h1,h2,h3, h5{
   font-family: 'Josefin Slab', serif;
 }
 
 .quark{
   font-size: 100px;
+  padding-bottom: none;
+  text-align: center;
+}
+
+.questionEverything{
+  font-size: 30px;
+  text-align: center;
+
 }
 
 .container{

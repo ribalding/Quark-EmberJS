@@ -10,7 +10,6 @@ export default Ember.Component.extend({
         answers: "test"
       };
       this.sendAction('editQuestion', question, params);
-      console.log(question, params);
     }
   }
 });

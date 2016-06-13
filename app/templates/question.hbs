@@ -1,11 +1,20 @@
 <div class="row">
   <div class="col-sm-6 col-sm-offset-2">
+    <div class="page-header">
+      <h1>{{model.question_text}}</h1>
 
-    <h2>{{model.question_text}}</h2>
+      <h4>Contributor: {{model.user_name}}</h4>
 
-    <h4>Contributor: {{model.user_name}}</h4>
+      <p class="notes">Notes: {{model.notes}}</p>
 
-    <p class="notes">Notes: {{model.notes}}</p>
+      <h2>Answers:</h2>
+      <ul>
+        {{#each model.answers as |answer|}}
+          <li>"{{answer.answer_text}}" -{{answer.answer_name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    {{new-answer question=model submitAnswer="submitAnswer"}}
   </div>
   <div class="col-sm-4">
     {{edit-question question=model editQuestion="editQuestion"}}
