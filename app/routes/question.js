@@ -5,6 +5,8 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
 
+  favoriteQuestions: Ember.inject.service(),
+
   actions : {
     editQuestion(question, params){
       Object.keys(params).forEach(function(key) {
@@ -31,6 +33,16 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', params.question);
+    },
+
+    addToFavorites(question){
+      this.get("favoriteQuestions").add(question);
+    },
+
+    addThumb(question){
+      var thisNumber = question.get('thumbs');
+      question.set('thumbs', thisNumber += 1);
+      question.save();
     }
   }
 });

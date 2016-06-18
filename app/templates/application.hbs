@@ -7,13 +7,14 @@
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Quark</a>
+        {{#link-to 'index' class="navbar-brand"}}Quark{{/link-to}}
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
+        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">All Questions</a></li>
+        <li>{{#link-to 'saved-questions'}}Favorites{{/link-to}}</li>
       </ul>
     </div>
   </nav>

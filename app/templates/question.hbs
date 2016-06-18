@@ -1,12 +1,22 @@
 <div class="row">
   <div class="col-sm-6 col-sm-offset-2">
-    <div class="page-header">
+    <div class="page-header questionBox">
       <h1>{{model.question_text}}</h1>
 
       <h4>Contributor: {{model.user_name}}</h4>
 
       <p class="notes">Notes: {{model.notes}}</p>
 
+      <div class="row">
+        <div class="col-sm-9">
+          <button class="addFavoritesButton btn btn-secondary btn-sm" {{action 'addToFavorites' model}}>Add To Favorites</button>
+        </div>
+        <div class="col-sm-3">
+          <span class="glyphicon glyphicon-thumbs-up" {{action 'addThumb' model}}></span>
+        </div>
+      </div>
+    </div>
+    <div class="page-header answerBox">
       <h2>Answers:</h2>
       <ul>
         {{#each model.answers as |answer|}}

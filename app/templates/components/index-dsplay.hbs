@@ -1,0 +1,15 @@
+<h1>Newest Questions</h1>
+<ul>
+{{#each sortedList as |question|}}
+  <li>
+    <div class="row questionLink">
+      <div class="col-sm-9">
+        <h4>{{#link-to 'question' question.id}}{{question.question_text}}{{/link-to}}</h4>
+      </div>
+      <div class="col-sm-3">
+        <span class="col-sm-offset-4 glyphicon glyphicon-thumbs-up"></span><h3 class="thumbNumber">({{question.thumbs}})</h3>
+      </div>
+    </div>
+  </li>
+{{/each}}
+</ul>

@@ -1,0 +1,14 @@
+<ul>
+  {{#each favoriteQuestions.favorites as |favorite|}}
+    <li>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="page-header questionLink">
+            <h2>{{#link-to 'question' favorite.id}}{{favorite.question_text}}{{/link-to}}</h2>
+            <button class="btn btn-danger" {{action 'removeFromList' favorite}}>Remove</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ul>

@@ -3,7 +3,28 @@ body{
   color: #eaeaea;
 }
 
+.glyphicon-thumbs-up{
+  font-size: 200%;
+}
+
+.glyphicon-thumbs-up:hover{
+  cursor:pointer;
+}
+
+.questionBox{
+  padding-bottom: 30px;
+}
+
+.answerBox{
+  padding-bottom: 50px;
+}
+
+.thumbNumber{
+  display: inline;
+}
+
 .questionLink{
+  color: #687176;
   background-color: lightgrey;
   border-radius: 5px;
   padding: 20px 25px;
@@ -22,6 +43,10 @@ body{
 
 ul{
   list-style: none;
+}
+
+.addFavoritesButton{
+  color: black;
 }
 
 .newQuestionBox{
