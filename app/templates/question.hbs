@@ -20,7 +20,7 @@
       <h2>Answers:</h2>
       <ul>
         {{#each model.answers as |answer|}}
-          <li>"{{answer.answer_text}}" -{{answer.answer_name}}</li>
+          <li>"{{answer.answer_text}}" - {{answer.answer_name}} {{newestComment answer.timestamp}}</li>
         {{/each}}
       </ul>
     </div>

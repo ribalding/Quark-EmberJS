@@ -8,7 +8,7 @@ export default Ember.Component.extend({
         question_text: this.get('question_text') ? this.get('question_text') : "",
         notes: this.get('notes') ? this.get('notes') : "",
         thumbs: 0
-      };
+      }
       this.sendAction('saveQuestion', params);
       this.set('user_name', "");
       this.set('question_text', "");

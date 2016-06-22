@@ -20,6 +20,7 @@ This is a web application that functions as a message board allowing users to po
 * JavaScript
 * ember
 * nodejs
+* MomentJS
 * HTML
 * CSS
 * Bower
